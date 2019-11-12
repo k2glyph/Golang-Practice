@@ -26,6 +26,11 @@ func sum(nums ...int) int {
 	}
 	return sum
 }
+
+/*
+Go supports anonymous functions, which can form closures.
+Anonymous functions are useful when you want to define a function inline without having to name it.
+*/
 func intSeq() func() int {
 	i := 0
 	return func() int {
@@ -33,11 +38,6 @@ func intSeq() func() int {
 		return i
 	}
 }
-
-/*
-Go supports anonymous functions, which can form closures.
-Anonymous functions are useful when you want to define a function inline without having to name it.
-*/
 
 /*
 Go supports recursive functions. Here’s a classic factorial example.
