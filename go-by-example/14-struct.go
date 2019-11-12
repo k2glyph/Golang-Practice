@@ -20,5 +20,7 @@ func main() {
 	p := person{name: "syantang", age: 21}
 	p.age = 21
 	p1 := &p
+	p1.age = 22
 	fmt.Println("Name: ", p1.name, " Age: ", p1.age)
+	fmt.Println("Name: ", p.name, " Age: ", p.age)
 }
