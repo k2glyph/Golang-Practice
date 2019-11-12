@@ -18,7 +18,8 @@ func main() {
 	fmt.Println(person{"Shyam", 21})
 	fmt.Println(newPerson("subina", 21))
 	p := person{name: "syantang", age: 21}
-	p.age = 21
+	p.age = 23
+	fmt.Println("Name: ", p.name, " Age: ", p.age)
 	p1 := &p
 	p1.age = 22
 	fmt.Println("Name: ", p1.name, " Age: ", p1.age)
