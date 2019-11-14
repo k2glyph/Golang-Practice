@@ -6,7 +6,7 @@ func pings(ping chan<- string, msg string) {
 	ping <- msg
 }
 
-// chan<- receiver and <-chan sender
+// chan <- receiver and <-chan sender
 func pongs(ping <-chan string, pong chan<- string) {
 	msg := <-ping
 	pong <- msg
