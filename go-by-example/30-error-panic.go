@@ -25,7 +25,7 @@ func main() {
 			fmt.Println("f1 works", val)
 		} else {
 			// fmt.Println(e.Error())
-			panic(e.Error())
+			panic(e.Error()) 
 		}
 	}
 
